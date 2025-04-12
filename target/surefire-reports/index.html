@@ -1,0 +1,2713 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 13 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\QAFox\Workspaces\LiveImplementationSpace\TutorialsNinjaLiveAutomationProjectDemo\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">82 methods, 13 failed,   69 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyHeightWidthNumberOfCharacters">verifyHeightWidthNumberOfCharacters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoggingIntoApplicationUsingChangedPassword">verifyLoggingIntoApplicationUsingChangedPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyMandatoryFieldsInRegisterAccountPage">verifyMandatoryFieldsInRegisterAccountPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyPasswordIsNotVisibleInPageSource">verifyPasswordIsNotVisibleInPageSource</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisterAccountUsingLeadingAndTrailingSpaces">verifyRegisterAccountUsingLeadingAndTrailingSpaces</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountByEnteringOnlySpaces">verifyRegisteringAccountByEnteringOnlySpaces</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountUsingInvalidTelephoneNumber">verifyRegisteringAccountUsingInvalidTelephoneNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=ABCD456#})">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=ABCD456#})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=12345.0})">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=12345.0})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcdefghi})">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcdefghi})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcd1234})">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcd1234})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcd123$})">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcd123$})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifyShowProductsByLimitingCount">verifyShowProductsByLimitingCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifyAllSortingOptionsInSearchResultsPage">verifyAllSortingOptionsInSearchResultsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifyBreadcrumbOptionInSearchResultsPage">verifyBreadcrumbOptionInSearchResultsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="verifyBreadcrumbTitleURLAndHeadingOfAccountLogoutPage">verifyBreadcrumbTitleURLAndHeadingOfAccountLogoutPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyBrowsingBackAfterLogin">verifyBrowsingBackAfterLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyBrowsingBackAfterLogout">verifyBrowsingBackAfterLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyCopyingOfTextEnteredIntoPasswordField">verifyCopyingOfTextEnteredIntoPasswordField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyDifferentWaysOfNavigatingToRegisterAccountPage">verifyDifferentWaysOfNavigatingToRegisterAccountPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyDifferrentWaysOfNavigatingToLoginPage">verifyDifferrentWaysOfNavigatingToLoginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifyDisplayingOfSearchFieldAndSearchButtonOnAllPagesOfTheApplication">verifyDisplayingOfSearchFieldAndSearchButtonOnAllPagesOfTheApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyForgottenPasswordOptionIsAvailable">verifyForgottenPasswordOptionIsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifyListAndGridViewsInSearchResultsPageHavingOneProduct">verifyListAndGridViewsInSearchResultsPageHavingOneProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifyListAndGridViewsWhenMultipleProductsAreDisplayed">verifyListAndGridViewsWhenMultipleProductsAreDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoggingIntoApplicationUsingInactiveCredentials">verifyLoggingIntoApplicationUsingInactiveCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoggingIntoApplicationUsingInvalidCredentials">verifyLoggingIntoApplicationUsingInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoggingIntoApplicationUsingInvalidEmailAndValidPassword">verifyLoggingIntoApplicationUsingInvalidEmailAndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoggingIntoApplicationUsingKeyboardKeys">verifyLoggingIntoApplicationUsingKeyboardKeys</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoggingIntoApplicationUsingValidCredentails">verifyLoggingIntoApplicationUsingValidCredentails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoggingIntoApplicationUsingValidEmailAndInvalidPassword">verifyLoggingIntoApplicationUsingValidEmailAndInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoggingIntoApplicationWithoutProvidingAnyCredentials">verifyLoggingIntoApplicationWithoutProvidingAnyCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="verifyLoggingOutAndBrowsingBack">verifyLoggingOutAndBrowsingBack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="verifyLoggingOutUsingMyAccountLogoutOption">verifyLoggingOutUsingMyAccountLogoutOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="verifyLoggingOutUsingRightColumnLogoutOption">verifyLoggingOutUsingRightColumnLogoutOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="verifyLoginImmediatleyAfterLogout">verifyLoginImmediatleyAfterLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginInAllEnvironments">verifyLoginInAllEnvironments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginPageBreadcrumbURLTitleHeading">verifyLoginPageBreadcrumbURLTitleHeading</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginPageNavigations">verifyLoginPageNavigations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginPageUI">verifyLoginPageUI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginPasswordFieldForVisibility">verifyLoginPasswordFieldForVisibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="verifyLogoutInAllSupportedEnvironments">verifyLogoutInAllSupportedEnvironments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="verifyLogoutUI">verifyLogoutUI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifyNavigatingToSearchPageFromSiteMapPage">verifyNavigatingToSearchPageFromSiteMapPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifyNavigationToProductComparisonPageFromSearchResultsPage">verifyNavigationToProductComparisonPageFromSearchResultsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="verifyNoLogoutOptionBeforeLoginInMyAccountDropMenu">verifyNoLogoutOptionBeforeLoginInMyAccountDropMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="verifyNoLogoutOptionBeforeLoginInRightColumnOptions">verifyNoLogoutOptionBeforeLoginInRightColumnOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyNumberOfUnsuccessfulLoginAttemps">verifyNumberOfUnsuccessfulLoginAttemps</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyPlaceHoldersOfFieldsInLoginPage">verifyPlaceHoldersOfFieldsInLoginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifyProductSeachResultingMultipleProducts">verifyProductSeachResultingMultipleProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifyProductSearchAfterLogin">verifyProductSearchAfterLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisterAccountInAllEnvironments">verifyRegisterAccountInAllEnvironments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisterAccountPageBreadcrumbURLTitleHeading">verifyRegisterAccountPageBreadcrumbURLTitleHeading</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisterAccountPageNavigations">verifyRegisterAccountPageNavigations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisterAccountPagePlaceholders">verifyRegisterAccountPagePlaceholders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisterAccountPrivacyPolicyField">verifyRegisterAccountPrivacyPolicyField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisterAccountUI">verifyRegisterAccountUI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisterAccountWithExistingEmailAddress">verifyRegisterAccountWithExistingEmailAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountByNotSubscribingToNewsletter">verifyRegisteringAccountByNotSubscribingToNewsletter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountByProvidingMismatchedPasswords">verifyRegisteringAccountByProvidingMismatchedPasswords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountBySubscribingToNewsletter">verifyRegisteringAccountBySubscribingToNewsletter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountPasswordFieldsForSecurity">verifyRegisteringAccountPasswordFieldsForSecurity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountUsingInvalidEmail">verifyRegisteringAccountUsingInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountUsingKeyboardKeys">verifyRegisteringAccountUsingKeyboardKeys</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountUsingMandatoryFields">verifyRegisteringAccountUsingMandatoryFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountWithoutEnteringConfirmationPassword">verifyRegisteringAccountWithoutEnteringConfirmationPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegisteringAccountWithoutSelectingPrivacyPolicyCheckboxField">verifyRegisteringAccountWithoutSelectingPrivacyPolicyCheckboxField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyRegistringAccountUsingAllFields">verifyRegistringAccountUsingAllFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifySearchBySelectingTheCategory">verifySearchBySelectingTheCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifySearchBySelectingToSearchInSubCategories">verifySearchBySelectingToSearchInSubCategories</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifySearchFunctionalityFielsPlaceHolders">verifySearchFunctionalityFielsPlaceHolders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifySearchFunctionalityInAllEnvironments">verifySearchFunctionalityInAllEnvironments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifySearchFunctionalityUsingSearchCriteriaField">verifySearchFunctionalityUsingSearchCriteriaField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifySearchPageHeadingTitleURL">verifySearchPageHeadingTitleURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifySearchPageUI">verifySearchPageUI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifySearchUsingTextInProductDescription">verifySearchUsingTextInProductDescription</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifySearchWithANonExistingProduct">verifySearchWithANonExistingProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifySearchWithAnExistingProduct">verifySearchWithAnExistingProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifySearchWithoutEnterAnyProduct">verifySearchWithoutEnterAnyProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyThankYourConfirmationEmailOnSuccessfulRegistration">verifyThankYourConfirmationEmailOnSuccessfulRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="verifyUsingAllOptionsOnSearchResultsPageUsingKeyboardKeys">verifyUsingAllOptionsOnSearchResultsPageUsingKeyboardKeys</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="verifyWarningMessageOfMandatoryFieldsInRegisterAccountPage">verifyWarningMessageOfMandatoryFieldsInRegisterAccountPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHeightWidthNumberOfCharacters">
+                  </a> <!-- verifyHeightWidthNumberOfCharacters -->
+                  <span class="method-name">verifyHeightWidthNumberOfCharacters</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyHeightWidthNumberOfCharacters(RegisterTest.java:781)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMandatoryFieldsInRegisterAccountPage">
+                  </a> <!-- verifyMandatoryFieldsInRegisterAccountPage -->
+                  <span class="method-name">verifyMandatoryFieldsInRegisterAccountPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [&quot;* &quot;] but found [none]
+	at tests.RegisterTest.verifyMandatoryFieldsInRegisterAccountPage(RegisterTest.java:475)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterAccountUsingLeadingAndTrailingSpaces">
+                  </a> <!-- verifyRegisterAccountUsingLeadingAndTrailingSpaces -->
+                  <span class="method-name">verifyRegisterAccountUsingLeadingAndTrailingSpaces</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Arun] but found [     Arun     ],
+	expected [Motoori] but found [     Motoori     ],
+	expected [1234567890] but found [     1234567890     ]
+	at tests.RegisterTest.verifyRegisterAccountUsingLeadingAndTrailingSpaces(RegisterTest.java:831)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountByEnteringOnlySpaces">
+                  </a> <!-- verifyRegisteringAccountByEnteringOnlySpaces -->
+                  <span class="method-name">verifyRegisteringAccountByEnteringOnlySpaces</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Telephone does not appear to be valid!] but found []
+	at tests.RegisterTest.verifyRegisteringAccountByEnteringOnlySpaces(RegisterTest.java:576)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountUsingInvalidTelephoneNumber">
+                  </a> <!-- verifyRegisteringAccountUsingInvalidTelephoneNumber -->
+                  <span class="method-name">verifyRegisteringAccountUsingInvalidTelephoneNumber</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingInvalidTelephoneNumber(RegisterTest.java:373)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=ABCD456#})">
+                  </a> <!-- verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=ABCD456#}) -->
+                  <span class="method-name">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards</span>
+                  <span class="parameters">({Passwords=ABCD456#})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=12345.0})">
+                  </a> <!-- verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=12345.0}) -->
+                  <span class="method-name">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards</span>
+                  <span class="parameters">({Passwords=12345.0})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcdefghi})">
+                  </a> <!-- verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcdefghi}) -->
+                  <span class="method-name">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards</span>
+                  <span class="parameters">({Passwords=abcdefghi})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcd1234})">
+                  </a> <!-- verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcd1234}) -->
+                  <span class="method-name">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards</span>
+                  <span class="parameters">({Passwords=abcd1234})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcd123$})">
+                  </a> <!-- verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcd123$}) -->
+                  <span class="method-name">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards</span>
+                  <span class="parameters">({Passwords=abcd123$})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingIntoApplicationUsingChangedPassword">
+                  </a> <!-- verifyLoggingIntoApplicationUsingChangedPassword -->
+                  <span class="method-name">verifyLoggingIntoApplicationUsingChangedPassword</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Change your password&quot;}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22160086409eb4f063953f58527644e9, findElement {using=link text, value=Change your password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\arunm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50865}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50865/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22160086409eb4f063953f58527644e9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at utils.ElementUtilities.isElementDisplayedOnPage(ElementUtilities.java:126)
+	at utils.ElementUtilities.clickOnElement(ElementUtilities.java:85)
+	at pages.MyAccountPage.clickOnChangeYourPasswordOption(MyAccountPage.java:128)
+	at tests.LoginTest.verifyLoggingIntoApplicationUsingChangedPassword(LoginTest.java:219)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPasswordIsNotVisibleInPageSource">
+                  </a> <!-- verifyPasswordIsNotVisibleInPageSource -->
+                  <span class="method-name">verifyPasswordIsNotVisibleInPageSource</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at tests.LoginTest.verifyPasswordIsNotVisibleInPageSource(LoginTest.java:210)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyShowProductsByLimitingCount">
+                  </a> <!-- verifyShowProductsByLimitingCount -->
+                  <span class="method-name">verifyShowProductsByLimitingCount</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.SearchTest.verifyShowProductsByLimitingCount(SearchTest.java:236)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDifferentWaysOfNavigatingToRegisterAccountPage">
+                  </a> <!-- verifyDifferentWaysOfNavigatingToRegisterAccountPage -->
+                  <span class="method-name">verifyDifferentWaysOfNavigatingToRegisterAccountPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterAccountInAllEnvironments">
+                  </a> <!-- verifyRegisterAccountInAllEnvironments -->
+                  <span class="method-name">verifyRegisterAccountInAllEnvironments</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterAccountPageBreadcrumbURLTitleHeading">
+                  </a> <!-- verifyRegisterAccountPageBreadcrumbURLTitleHeading -->
+                  <span class="method-name">verifyRegisterAccountPageBreadcrumbURLTitleHeading</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterAccountPageNavigations">
+                  </a> <!-- verifyRegisterAccountPageNavigations -->
+                  <span class="method-name">verifyRegisterAccountPageNavigations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterAccountPagePlaceholders">
+                  </a> <!-- verifyRegisterAccountPagePlaceholders -->
+                  <span class="method-name">verifyRegisterAccountPagePlaceholders</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterAccountPrivacyPolicyField">
+                  </a> <!-- verifyRegisterAccountPrivacyPolicyField -->
+                  <span class="method-name">verifyRegisterAccountPrivacyPolicyField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterAccountUI">
+                  </a> <!-- verifyRegisterAccountUI -->
+                  <span class="method-name">verifyRegisterAccountUI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterAccountWithExistingEmailAddress">
+                  </a> <!-- verifyRegisterAccountWithExistingEmailAddress -->
+                  <span class="method-name">verifyRegisterAccountWithExistingEmailAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountByNotSubscribingToNewsletter">
+                  </a> <!-- verifyRegisteringAccountByNotSubscribingToNewsletter -->
+                  <span class="method-name">verifyRegisteringAccountByNotSubscribingToNewsletter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountByProvidingMismatchedPasswords">
+                  </a> <!-- verifyRegisteringAccountByProvidingMismatchedPasswords -->
+                  <span class="method-name">verifyRegisteringAccountByProvidingMismatchedPasswords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountBySubscribingToNewsletter">
+                  </a> <!-- verifyRegisteringAccountBySubscribingToNewsletter -->
+                  <span class="method-name">verifyRegisteringAccountBySubscribingToNewsletter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountPasswordFieldsForSecurity">
+                  </a> <!-- verifyRegisteringAccountPasswordFieldsForSecurity -->
+                  <span class="method-name">verifyRegisteringAccountPasswordFieldsForSecurity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountUsingInvalidEmail">
+                  </a> <!-- verifyRegisteringAccountUsingInvalidEmail -->
+                  <span class="method-name">verifyRegisteringAccountUsingInvalidEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountUsingKeyboardKeys">
+                  </a> <!-- verifyRegisteringAccountUsingKeyboardKeys -->
+                  <span class="method-name">verifyRegisteringAccountUsingKeyboardKeys</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountUsingMandatoryFields">
+                  </a> <!-- verifyRegisteringAccountUsingMandatoryFields -->
+                  <span class="method-name">verifyRegisteringAccountUsingMandatoryFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountWithoutEnteringConfirmationPassword">
+                  </a> <!-- verifyRegisteringAccountWithoutEnteringConfirmationPassword -->
+                  <span class="method-name">verifyRegisteringAccountWithoutEnteringConfirmationPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisteringAccountWithoutSelectingPrivacyPolicyCheckboxField">
+                  </a> <!-- verifyRegisteringAccountWithoutSelectingPrivacyPolicyCheckboxField -->
+                  <span class="method-name">verifyRegisteringAccountWithoutSelectingPrivacyPolicyCheckboxField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistringAccountUsingAllFields">
+                  </a> <!-- verifyRegistringAccountUsingAllFields -->
+                  <span class="method-name">verifyRegistringAccountUsingAllFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThankYourConfirmationEmailOnSuccessfulRegistration">
+                  </a> <!-- verifyThankYourConfirmationEmailOnSuccessfulRegistration -->
+                  <span class="method-name">verifyThankYourConfirmationEmailOnSuccessfulRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWarningMessageOfMandatoryFieldsInRegisterAccountPage">
+                  </a> <!-- verifyWarningMessageOfMandatoryFieldsInRegisterAccountPage -->
+                  <span class="method-name">verifyWarningMessageOfMandatoryFieldsInRegisterAccountPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBrowsingBackAfterLogin">
+                  </a> <!-- verifyBrowsingBackAfterLogin -->
+                  <span class="method-name">verifyBrowsingBackAfterLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBrowsingBackAfterLogout">
+                  </a> <!-- verifyBrowsingBackAfterLogout -->
+                  <span class="method-name">verifyBrowsingBackAfterLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCopyingOfTextEnteredIntoPasswordField">
+                  </a> <!-- verifyCopyingOfTextEnteredIntoPasswordField -->
+                  <span class="method-name">verifyCopyingOfTextEnteredIntoPasswordField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDifferrentWaysOfNavigatingToLoginPage">
+                  </a> <!-- verifyDifferrentWaysOfNavigatingToLoginPage -->
+                  <span class="method-name">verifyDifferrentWaysOfNavigatingToLoginPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyForgottenPasswordOptionIsAvailable">
+                  </a> <!-- verifyForgottenPasswordOptionIsAvailable -->
+                  <span class="method-name">verifyForgottenPasswordOptionIsAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingIntoApplicationUsingInactiveCredentials">
+                  </a> <!-- verifyLoggingIntoApplicationUsingInactiveCredentials -->
+                  <span class="method-name">verifyLoggingIntoApplicationUsingInactiveCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingIntoApplicationUsingInvalidCredentials">
+                  </a> <!-- verifyLoggingIntoApplicationUsingInvalidCredentials -->
+                  <span class="method-name">verifyLoggingIntoApplicationUsingInvalidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingIntoApplicationUsingInvalidEmailAndValidPassword">
+                  </a> <!-- verifyLoggingIntoApplicationUsingInvalidEmailAndValidPassword -->
+                  <span class="method-name">verifyLoggingIntoApplicationUsingInvalidEmailAndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingIntoApplicationUsingKeyboardKeys">
+                  </a> <!-- verifyLoggingIntoApplicationUsingKeyboardKeys -->
+                  <span class="method-name">verifyLoggingIntoApplicationUsingKeyboardKeys</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingIntoApplicationUsingValidCredentails">
+                  </a> <!-- verifyLoggingIntoApplicationUsingValidCredentails -->
+                  <span class="method-name">verifyLoggingIntoApplicationUsingValidCredentails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingIntoApplicationUsingValidEmailAndInvalidPassword">
+                  </a> <!-- verifyLoggingIntoApplicationUsingValidEmailAndInvalidPassword -->
+                  <span class="method-name">verifyLoggingIntoApplicationUsingValidEmailAndInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingIntoApplicationWithoutProvidingAnyCredentials">
+                  </a> <!-- verifyLoggingIntoApplicationWithoutProvidingAnyCredentials -->
+                  <span class="method-name">verifyLoggingIntoApplicationWithoutProvidingAnyCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginInAllEnvironments">
+                  </a> <!-- verifyLoginInAllEnvironments -->
+                  <span class="method-name">verifyLoginInAllEnvironments</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageBreadcrumbURLTitleHeading">
+                  </a> <!-- verifyLoginPageBreadcrumbURLTitleHeading -->
+                  <span class="method-name">verifyLoginPageBreadcrumbURLTitleHeading</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageNavigations">
+                  </a> <!-- verifyLoginPageNavigations -->
+                  <span class="method-name">verifyLoginPageNavigations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageUI">
+                  </a> <!-- verifyLoginPageUI -->
+                  <span class="method-name">verifyLoginPageUI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPasswordFieldForVisibility">
+                  </a> <!-- verifyLoginPasswordFieldForVisibility -->
+                  <span class="method-name">verifyLoginPasswordFieldForVisibility</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNumberOfUnsuccessfulLoginAttemps">
+                  </a> <!-- verifyNumberOfUnsuccessfulLoginAttemps -->
+                  <span class="method-name">verifyNumberOfUnsuccessfulLoginAttemps</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPlaceHoldersOfFieldsInLoginPage">
+                  </a> <!-- verifyPlaceHoldersOfFieldsInLoginPage -->
+                  <span class="method-name">verifyPlaceHoldersOfFieldsInLoginPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllSortingOptionsInSearchResultsPage">
+                  </a> <!-- verifyAllSortingOptionsInSearchResultsPage -->
+                  <span class="method-name">verifyAllSortingOptionsInSearchResultsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBreadcrumbOptionInSearchResultsPage">
+                  </a> <!-- verifyBreadcrumbOptionInSearchResultsPage -->
+                  <span class="method-name">verifyBreadcrumbOptionInSearchResultsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDisplayingOfSearchFieldAndSearchButtonOnAllPagesOfTheApplication">
+                  </a> <!-- verifyDisplayingOfSearchFieldAndSearchButtonOnAllPagesOfTheApplication -->
+                  <span class="method-name">verifyDisplayingOfSearchFieldAndSearchButtonOnAllPagesOfTheApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyListAndGridViewsInSearchResultsPageHavingOneProduct">
+                  </a> <!-- verifyListAndGridViewsInSearchResultsPageHavingOneProduct -->
+                  <span class="method-name">verifyListAndGridViewsInSearchResultsPageHavingOneProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyListAndGridViewsWhenMultipleProductsAreDisplayed">
+                  </a> <!-- verifyListAndGridViewsWhenMultipleProductsAreDisplayed -->
+                  <span class="method-name">verifyListAndGridViewsWhenMultipleProductsAreDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavigatingToSearchPageFromSiteMapPage">
+                  </a> <!-- verifyNavigatingToSearchPageFromSiteMapPage -->
+                  <span class="method-name">verifyNavigatingToSearchPageFromSiteMapPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavigationToProductComparisonPageFromSearchResultsPage">
+                  </a> <!-- verifyNavigationToProductComparisonPageFromSearchResultsPage -->
+                  <span class="method-name">verifyNavigationToProductComparisonPageFromSearchResultsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductSeachResultingMultipleProducts">
+                  </a> <!-- verifyProductSeachResultingMultipleProducts -->
+                  <span class="method-name">verifyProductSeachResultingMultipleProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductSearchAfterLogin">
+                  </a> <!-- verifyProductSearchAfterLogin -->
+                  <span class="method-name">verifyProductSearchAfterLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchBySelectingTheCategory">
+                  </a> <!-- verifySearchBySelectingTheCategory -->
+                  <span class="method-name">verifySearchBySelectingTheCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchBySelectingToSearchInSubCategories">
+                  </a> <!-- verifySearchBySelectingToSearchInSubCategories -->
+                  <span class="method-name">verifySearchBySelectingToSearchInSubCategories</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchFunctionalityFielsPlaceHolders">
+                  </a> <!-- verifySearchFunctionalityFielsPlaceHolders -->
+                  <span class="method-name">verifySearchFunctionalityFielsPlaceHolders</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchFunctionalityInAllEnvironments">
+                  </a> <!-- verifySearchFunctionalityInAllEnvironments -->
+                  <span class="method-name">verifySearchFunctionalityInAllEnvironments</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchFunctionalityUsingSearchCriteriaField">
+                  </a> <!-- verifySearchFunctionalityUsingSearchCriteriaField -->
+                  <span class="method-name">verifySearchFunctionalityUsingSearchCriteriaField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchPageHeadingTitleURL">
+                  </a> <!-- verifySearchPageHeadingTitleURL -->
+                  <span class="method-name">verifySearchPageHeadingTitleURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchPageUI">
+                  </a> <!-- verifySearchPageUI -->
+                  <span class="method-name">verifySearchPageUI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchUsingTextInProductDescription">
+                  </a> <!-- verifySearchUsingTextInProductDescription -->
+                  <span class="method-name">verifySearchUsingTextInProductDescription</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchWithANonExistingProduct">
+                  </a> <!-- verifySearchWithANonExistingProduct -->
+                  <span class="method-name">verifySearchWithANonExistingProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchWithAnExistingProduct">
+                  </a> <!-- verifySearchWithAnExistingProduct -->
+                  <span class="method-name">verifySearchWithAnExistingProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchWithoutEnterAnyProduct">
+                  </a> <!-- verifySearchWithoutEnterAnyProduct -->
+                  <span class="method-name">verifySearchWithoutEnterAnyProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUsingAllOptionsOnSearchResultsPageUsingKeyboardKeys">
+                  </a> <!-- verifyUsingAllOptionsOnSearchResultsPageUsingKeyboardKeys -->
+                  <span class="method-name">verifyUsingAllOptionsOnSearchResultsPageUsingKeyboardKeys</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LogoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBreadcrumbTitleURLAndHeadingOfAccountLogoutPage">
+                  </a> <!-- verifyBreadcrumbTitleURLAndHeadingOfAccountLogoutPage -->
+                  <span class="method-name">verifyBreadcrumbTitleURLAndHeadingOfAccountLogoutPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingOutAndBrowsingBack">
+                  </a> <!-- verifyLoggingOutAndBrowsingBack -->
+                  <span class="method-name">verifyLoggingOutAndBrowsingBack</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingOutUsingMyAccountLogoutOption">
+                  </a> <!-- verifyLoggingOutUsingMyAccountLogoutOption -->
+                  <span class="method-name">verifyLoggingOutUsingMyAccountLogoutOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingOutUsingRightColumnLogoutOption">
+                  </a> <!-- verifyLoggingOutUsingRightColumnLogoutOption -->
+                  <span class="method-name">verifyLoggingOutUsingRightColumnLogoutOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginImmediatleyAfterLogout">
+                  </a> <!-- verifyLoginImmediatleyAfterLogout -->
+                  <span class="method-name">verifyLoginImmediatleyAfterLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogoutInAllSupportedEnvironments">
+                  </a> <!-- verifyLogoutInAllSupportedEnvironments -->
+                  <span class="method-name">verifyLogoutInAllSupportedEnvironments</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogoutUI">
+                  </a> <!-- verifyLogoutUI -->
+                  <span class="method-name">verifyLogoutUI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNoLogoutOptionBeforeLoginInMyAccountDropMenu">
+                  </a> <!-- verifyNoLogoutOptionBeforeLoginInMyAccountDropMenu -->
+                  <span class="method-name">verifyNoLogoutOptionBeforeLoginInMyAccountDropMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNoLogoutOptionBeforeLoginInRightColumnOptions">
+                  </a> <!-- verifyNoLogoutOptionBeforeLoginInRightColumnOptions -->
+                  <span class="method-name">verifyNoLogoutOptionBeforeLoginInRightColumnOptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\QAFox\Workspaces\LiveImplementationSpace\TutorialsNinjaLiveAutomationProjectDemo\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.MyListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.RegisterTest&quot;/&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.LogoutTest&quot;/&gt;
+      &lt;class name=&quot;tests.SearchTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(82);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyHeightWidthNumberOfCharacters')
+data.setCell(0, 2, 'tests.RegisterTest')
+data.setCell(0, 3, 56449);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyDisplayingOfSearchFieldAndSearchButtonOnAllPagesOfTheApplication')
+data.setCell(1, 2, 'tests.SearchTest')
+data.setCell(1, 3, 55800);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyLoginPageNavigations')
+data.setCell(2, 2, 'tests.LoginTest')
+data.setCell(2, 3, 37026);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyRegisterAccountPageNavigations')
+data.setCell(3, 2, 'tests.RegisterTest')
+data.setCell(3, 3, 36401);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyListAndGridViewsInSearchResultsPageHavingOneProduct')
+data.setCell(4, 2, 'tests.SearchTest')
+data.setCell(4, 3, 13378);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyBrowsingBackAfterLogout')
+data.setCell(5, 2, 'tests.LoginTest')
+data.setCell(5, 3, 11726);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyNumberOfUnsuccessfulLoginAttemps')
+data.setCell(6, 2, 'tests.LoginTest')
+data.setCell(6, 3, 11719);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyLoginInAllEnvironments')
+data.setCell(7, 2, 'tests.LoginTest')
+data.setCell(7, 3, 10257);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLoginImmediatleyAfterLogout')
+data.setCell(8, 2, 'tests.LogoutTest')
+data.setCell(8, 3, 9690);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyBrowsingBackAfterLogin')
+data.setCell(9, 2, 'tests.LoginTest')
+data.setCell(9, 3, 9669);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyLoggingIntoApplicationUsingValidCredentails')
+data.setCell(10, 2, 'tests.LoginTest')
+data.setCell(10, 3, 9419);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyUsingAllOptionsOnSearchResultsPageUsingKeyboardKeys')
+data.setCell(11, 2, 'tests.SearchTest')
+data.setCell(11, 3, 9380);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyLoggingOutUsingRightColumnLogoutOption')
+data.setCell(12, 2, 'tests.LogoutTest')
+data.setCell(12, 3, 8735);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards')
+data.setCell(13, 2, 'tests.RegisterTest')
+data.setCell(13, 3, 7936);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards')
+data.setCell(14, 2, 'tests.RegisterTest')
+data.setCell(14, 3, 7891);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyLoggingIntoApplicationUsingKeyboardKeys')
+data.setCell(15, 2, 'tests.LoginTest')
+data.setCell(15, 3, 7846);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards')
+data.setCell(16, 2, 'tests.RegisterTest')
+data.setCell(16, 3, 7724);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyThankYourConfirmationEmailOnSuccessfulRegistration')
+data.setCell(17, 2, 'tests.RegisterTest')
+data.setCell(17, 3, 7583);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards')
+data.setCell(18, 2, 'tests.RegisterTest')
+data.setCell(18, 3, 7279);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards')
+data.setCell(19, 2, 'tests.RegisterTest')
+data.setCell(19, 3, 7206);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyLogoutUI')
+data.setCell(20, 2, 'tests.LogoutTest')
+data.setCell(20, 3, 7181);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyRegisteringAccountUsingInvalidTelephoneNumber')
+data.setCell(21, 2, 'tests.RegisterTest')
+data.setCell(21, 3, 7144);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyLogoutInAllSupportedEnvironments')
+data.setCell(22, 2, 'tests.LogoutTest')
+data.setCell(22, 3, 7111);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyLoggingOutUsingMyAccountLogoutOption')
+data.setCell(23, 2, 'tests.LogoutTest')
+data.setCell(23, 3, 7039);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyRegisteringAccountByEnteringOnlySpaces')
+data.setCell(24, 2, 'tests.RegisterTest')
+data.setCell(24, 3, 6837);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyRegistringAccountUsingAllFields')
+data.setCell(25, 2, 'tests.RegisterTest')
+data.setCell(25, 3, 6762);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyRegisteringAccountUsingInvalidEmail')
+data.setCell(26, 2, 'tests.RegisterTest')
+data.setCell(26, 3, 6705);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyLoggingOutAndBrowsingBack')
+data.setCell(27, 2, 'tests.LogoutTest')
+data.setCell(27, 3, 6680);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyRegisterAccountUsingLeadingAndTrailingSpaces')
+data.setCell(28, 2, 'tests.RegisterTest')
+data.setCell(28, 3, 6329);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyBreadcrumbTitleURLAndHeadingOfAccountLogoutPage')
+data.setCell(29, 2, 'tests.LogoutTest')
+data.setCell(29, 3, 6233);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyRegisteringAccountBySubscribingToNewsletter')
+data.setCell(30, 2, 'tests.RegisterTest')
+data.setCell(30, 3, 6122);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyRegisteringAccountByNotSubscribingToNewsletter')
+data.setCell(31, 2, 'tests.RegisterTest')
+data.setCell(31, 3, 5841);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyRegisteringAccountUsingMandatoryFields')
+data.setCell(32, 2, 'tests.RegisterTest')
+data.setCell(32, 3, 5332);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifyRegisterAccountInAllEnvironments')
+data.setCell(33, 2, 'tests.RegisterTest')
+data.setCell(33, 3, 4774);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'verifyLoggingIntoApplicationUsingChangedPassword')
+data.setCell(34, 2, 'tests.LoginTest')
+data.setCell(34, 3, 4645);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'verifyProductSearchAfterLogin')
+data.setCell(35, 2, 'tests.SearchTest')
+data.setCell(35, 3, 4590);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'verifyRegisteringAccountByProvidingMismatchedPasswords')
+data.setCell(36, 2, 'tests.RegisterTest')
+data.setCell(36, 3, 4008);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'verifyNoLogoutOptionBeforeLoginInRightColumnOptions')
+data.setCell(37, 2, 'tests.LogoutTest')
+data.setCell(37, 3, 3975);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'verifyRegisterAccountWithExistingEmailAddress')
+data.setCell(38, 2, 'tests.RegisterTest')
+data.setCell(38, 3, 3832);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'verifyRegisteringAccountUsingKeyboardKeys')
+data.setCell(39, 2, 'tests.RegisterTest')
+data.setCell(39, 3, 3469);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'verifyRegisteringAccountWithoutSelectingPrivacyPolicyCheckboxField')
+data.setCell(40, 2, 'tests.RegisterTest')
+data.setCell(40, 3, 3377);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'verifyRegisteringAccountWithoutEnteringConfirmationPassword')
+data.setCell(41, 2, 'tests.RegisterTest')
+data.setCell(41, 3, 3309);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'verifyNoLogoutOptionBeforeLoginInMyAccountDropMenu')
+data.setCell(42, 2, 'tests.LogoutTest')
+data.setCell(42, 3, 3272);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'verifySearchBySelectingTheCategory')
+data.setCell(43, 2, 'tests.SearchTest')
+data.setCell(43, 3, 3256);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'verifyDifferentWaysOfNavigatingToRegisterAccountPage')
+data.setCell(44, 2, 'tests.RegisterTest')
+data.setCell(44, 3, 3170);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'verifySearchBySelectingToSearchInSubCategories')
+data.setCell(45, 2, 'tests.SearchTest')
+data.setCell(45, 3, 2980);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'verifyDifferrentWaysOfNavigatingToLoginPage')
+data.setCell(46, 2, 'tests.LoginTest')
+data.setCell(46, 3, 2451);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'verifySearchUsingTextInProductDescription')
+data.setCell(47, 2, 'tests.SearchTest')
+data.setCell(47, 3, 2244);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'verifyLoggingIntoApplicationUsingInvalidEmailAndValidPassword')
+data.setCell(48, 2, 'tests.LoginTest')
+data.setCell(48, 3, 2093);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'verifyCopyingOfTextEnteredIntoPasswordField')
+data.setCell(49, 2, 'tests.LoginTest')
+data.setCell(49, 3, 2060);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'verifyLoggingIntoApplicationUsingInactiveCredentials')
+data.setCell(50, 2, 'tests.LoginTest')
+data.setCell(50, 3, 1966);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'verifyListAndGridViewsWhenMultipleProductsAreDisplayed')
+data.setCell(51, 2, 'tests.SearchTest')
+data.setCell(51, 3, 1911);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'verifyLoggingIntoApplicationUsingInvalidCredentials')
+data.setCell(52, 2, 'tests.LoginTest')
+data.setCell(52, 3, 1806);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'verifySearchFunctionalityUsingSearchCriteriaField')
+data.setCell(53, 2, 'tests.SearchTest')
+data.setCell(53, 3, 1755);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'verifyLoggingIntoApplicationUsingValidEmailAndInvalidPassword')
+data.setCell(54, 2, 'tests.LoginTest')
+data.setCell(54, 3, 1715);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'verifyNavigationToProductComparisonPageFromSearchResultsPage')
+data.setCell(55, 2, 'tests.SearchTest')
+data.setCell(55, 3, 1710);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'verifyBreadcrumbOptionInSearchResultsPage')
+data.setCell(56, 2, 'tests.SearchTest')
+data.setCell(56, 3, 1707);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'verifyAllSortingOptionsInSearchResultsPage')
+data.setCell(57, 2, 'tests.SearchTest')
+data.setCell(57, 3, 1470);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'verifyWarningMessageOfMandatoryFieldsInRegisterAccountPage')
+data.setCell(58, 2, 'tests.RegisterTest')
+data.setCell(58, 3, 1401);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'verifySearchFunctionalityInAllEnvironments')
+data.setCell(59, 2, 'tests.SearchTest')
+data.setCell(59, 3, 1352);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'verifyPasswordIsNotVisibleInPageSource')
+data.setCell(60, 2, 'tests.LoginTest')
+data.setCell(60, 3, 1333);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'verifyNavigatingToSearchPageFromSiteMapPage')
+data.setCell(61, 2, 'tests.SearchTest')
+data.setCell(61, 3, 1327);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'verifyShowProductsByLimitingCount')
+data.setCell(62, 2, 'tests.SearchTest')
+data.setCell(62, 3, 1280);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'verifySearchWithAnExistingProduct')
+data.setCell(63, 2, 'tests.SearchTest')
+data.setCell(63, 3, 1264);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'verifySearchWithANonExistingProduct')
+data.setCell(64, 2, 'tests.SearchTest')
+data.setCell(64, 3, 1245);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'verifyProductSeachResultingMultipleProducts')
+data.setCell(65, 2, 'tests.SearchTest')
+data.setCell(65, 3, 1166);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'verifySearchPageUI')
+data.setCell(66, 2, 'tests.SearchTest')
+data.setCell(66, 3, 1096);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'verifyLoggingIntoApplicationWithoutProvidingAnyCredentials')
+data.setCell(67, 2, 'tests.LoginTest')
+data.setCell(67, 3, 1030);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'verifyRegisterAccountUI')
+data.setCell(68, 2, 'tests.RegisterTest')
+data.setCell(68, 3, 822);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'verifySearchWithoutEnterAnyProduct')
+data.setCell(69, 2, 'tests.SearchTest')
+data.setCell(69, 3, 785);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'verifyForgottenPasswordOptionIsAvailable')
+data.setCell(70, 2, 'tests.LoginTest')
+data.setCell(70, 3, 742);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'verifySearchPageHeadingTitleURL')
+data.setCell(71, 2, 'tests.SearchTest')
+data.setCell(71, 3, 738);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'verifySearchFunctionalityFielsPlaceHolders')
+data.setCell(72, 2, 'tests.SearchTest')
+data.setCell(72, 3, 702);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'verifyLoginPageUI')
+data.setCell(73, 2, 'tests.LoginTest')
+data.setCell(73, 3, 584);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'verifyMandatoryFieldsInRegisterAccountPage')
+data.setCell(74, 2, 'tests.RegisterTest')
+data.setCell(74, 3, 411);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'verifyRegisterAccountPagePlaceholders')
+data.setCell(75, 2, 'tests.RegisterTest')
+data.setCell(75, 3, 272);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'verifyLoginPageBreadcrumbURLTitleHeading')
+data.setCell(76, 2, 'tests.LoginTest')
+data.setCell(76, 3, 234);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'verifyRegisterAccountPageBreadcrumbURLTitleHeading')
+data.setCell(77, 2, 'tests.RegisterTest')
+data.setCell(77, 3, 172);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'verifyRegisterAccountPrivacyPolicyField')
+data.setCell(78, 2, 'tests.RegisterTest')
+data.setCell(78, 3, 91);
+data.setCell(79, 0, 79)
+data.setCell(79, 1, 'verifyPlaceHoldersOfFieldsInLoginPage')
+data.setCell(79, 2, 'tests.LoginTest')
+data.setCell(79, 3, 88);
+data.setCell(80, 0, 80)
+data.setCell(80, 1, 'verifyLoginPasswordFieldForVisibility')
+data.setCell(80, 2, 'tests.LoginTest')
+data.setCell(80, 3, 77);
+data.setCell(81, 0, 81)
+data.setCell(81, 1, 'verifyRegisteringAccountPasswordFieldsForSecurity')
+data.setCell(81, 2, 'tests.RegisterTest')
+data.setCell(81, 3, 63);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.RegisterTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyDataBaseTestingForRegisterAccount</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountUsingMandatoryFields</span>
+                <span class="method-start">9364 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">14704 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">15107 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThankYourConfirmationEmailOnSuccessfulRegistration</span>
+                <span class="method-start">21466 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">29050 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">29493 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistringAccountUsingAllFields</span>
+                <span class="method-start">35658 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">42423 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">42795 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWarningMessageOfMandatoryFieldsInRegisterAccountPage</span>
+                <span class="method-start">49059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">50461 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">50768 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountBySubscribingToNewsletter</span>
+                <span class="method-start">56883 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">63007 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">63369 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountByNotSubscribingToNewsletter</span>
+                <span class="method-start">69495 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">75337 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">75746 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDifferentWaysOfNavigatingToRegisterAccountPage</span>
+                <span class="method-start">81802 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">84973 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">85337 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountByProvidingMismatchedPasswords</span>
+                <span class="method-start">91568 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">95577 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">95958 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisterAccountWithExistingEmailAddress</span>
+                <span class="method-start">101979 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">105812 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">106151 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountUsingInvalidEmail</span>
+                <span class="method-start">112165 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">118876 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">119344 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegisteringAccountUsingInvalidTelephoneNumber</span>
+                <span class="method-start">125163 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">132661 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">133110 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountUsingKeyboardKeys</span>
+                <span class="method-start">138762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">142233 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">142555 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisterAccountPagePlaceholders</span>
+                <span class="method-start">149233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">149507 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">150015 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMandatoryFieldsInRegisterAccountPage</span>
+                <span class="method-start">154894 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">155553 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">155818 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegisteringAccountByEnteringOnlySpaces</span>
+                <span class="method-start">162129 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">169266 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">173250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=12345.0})</span>
+                <span class="method-start">179008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">187211 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">189114 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcdefghi})</span>
+                <span class="method-start">195257 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">203227 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">205151 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcd1234})</span>
+                <span class="method-start">210752 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">218283 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">218783 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=abcd123$})</span>
+                <span class="method-start">224536 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">232088 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">232466 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards({Passwords=ABCD456#})</span>
+                <span class="method-start">238068 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">246269 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">246607 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyHeightWidthNumberOfCharacters</span>
+                <span class="method-start">253203 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">309904 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">310309 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegisterAccountUsingLeadingAndTrailingSpaces</span>
+                <span class="method-start">316172 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">322789 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">323135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisterAccountPrivacyPolicyField</span>
+                <span class="method-start">328848 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">328940 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">329270 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountWithoutSelectingPrivacyPolicyCheckboxField</span>
+                <span class="method-start">334825 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">338202 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">338531 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountPasswordFieldsForSecurity</span>
+                <span class="method-start">344689 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">344753 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">345074 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisterAccountPageNavigations</span>
+                <span class="method-start">350716 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">387119 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">387467 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisteringAccountWithoutEnteringConfirmationPassword</span>
+                <span class="method-start">393290 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">396600 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">396929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisterAccountPageBreadcrumbURLTitleHeading</span>
+                <span class="method-start">402698 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">402871 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">403168 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisterAccountUI</span>
+                <span class="method-start">409119 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">409943 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">410397 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisterAccountInAllEnvironments</span>
+                <span class="method-start">416421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">421196 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">421605 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggingIntoApplicationUsingValidCredentails</span>
+                <span class="method-start">427309 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">436730 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">437145 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggingIntoApplicationUsingInvalidCredentials</span>
+                <span class="method-start">442565 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">444372 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">444621 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggingIntoApplicationUsingInvalidEmailAndValidPassword</span>
+                <span class="method-start">450217 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">452311 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">452587 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggingIntoApplicationUsingValidEmailAndInvalidPassword</span>
+                <span class="method-start">458449 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">460165 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">460550 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggingIntoApplicationWithoutProvidingAnyCredentials</span>
+                <span class="method-start">466418 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">467449 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">467828 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyForgottenPasswordOptionIsAvailable</span>
+                <span class="method-start">473427 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">474170 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">474564 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggingIntoApplicationUsingKeyboardKeys</span>
+                <span class="method-start">480080 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">487927 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">488370 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPlaceHoldersOfFieldsInLoginPage</span>
+                <span class="method-start">494121 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">494210 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">494521 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBrowsingBackAfterLogin</span>
+                <span class="method-start">499850 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">509520 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">509806 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBrowsingBackAfterLogout</span>
+                <span class="method-start">516032 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">527760 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">528128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggingIntoApplicationUsingInactiveCredentials</span>
+                <span class="method-start">533726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">535692 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">536024 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNumberOfUnsuccessfulLoginAttemps</span>
+                <span class="method-start">541805 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">553525 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">553828 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginPasswordFieldForVisibility</span>
+                <span class="method-start">559472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">559550 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">559905 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCopyingOfTextEnteredIntoPasswordField</span>
+                <span class="method-start">565311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">567372 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">567660 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyPasswordIsNotVisibleInPageSource</span>
+                <span class="method-start">572772 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">574331 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">574776 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoggingIntoApplicationUsingChangedPassword</span>
+                <span class="method-start">579146 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">584116 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">584441 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginPageNavigations</span>
+                <span class="method-start">589913 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">626940 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">627260 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDifferrentWaysOfNavigatingToLoginPage</span>
+                <span class="method-start">632500 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">634952 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">635236 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginPageBreadcrumbURLTitleHeading</span>
+                <span class="method-start">640132 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">640366 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">640655 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginPageUI</span>
+                <span class="method-start">645908 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">646495 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">646776 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginInAllEnvironments</span>
+                <span class="method-start">652450 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">662709 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">663124 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggingOutUsingMyAccountLogoutOption</span>
+                <span class="method-start">666938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">673978 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">674689 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggingOutUsingRightColumnLogoutOption</span>
+                <span class="method-start">679729 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">688466 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">688984 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggingOutAndBrowsingBack</span>
+                <span class="method-start">694276 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">700958 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">701292 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNoLogoutOptionBeforeLoginInMyAccountDropMenu</span>
+                <span class="method-start">705709 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">708981 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">709319 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNoLogoutOptionBeforeLoginInRightColumnOptions</span>
+                <span class="method-start">713168 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">717144 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">717496 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginImmediatleyAfterLogout</span>
+                <span class="method-start">721500 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">731191 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">731492 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBreadcrumbTitleURLAndHeadingOfAccountLogoutPage</span>
+                <span class="method-start">736420 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">742654 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">742993 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogoutUI</span>
+                <span class="method-start">747538 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">754721 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">755056 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogoutInAllSupportedEnvironments</span>
+                <span class="method-start">759279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">766391 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">766692 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchWithAnExistingProduct</span>
+                <span class="method-start">771289 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">772555 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">772787 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchWithANonExistingProduct</span>
+                <span class="method-start">776646 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">777893 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">778363 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchWithoutEnterAnyProduct</span>
+                <span class="method-start">782322 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">783108 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">783623 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductSearchAfterLogin</span>
+                <span class="method-start">788975 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">793566 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">793904 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductSeachResultingMultipleProducts</span>
+                <span class="method-start">798533 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">799699 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">800170 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchFunctionalityFielsPlaceHolders</span>
+                <span class="method-start">804590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">805293 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">805594 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchFunctionalityUsingSearchCriteriaField</span>
+                <span class="method-start">810207 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">811963 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">812231 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchUsingTextInProductDescription</span>
+                <span class="method-start">817008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">819253 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">819596 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchBySelectingTheCategory</span>
+                <span class="method-start">823964 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">827222 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">827497 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchBySelectingToSearchInSubCategories</span>
+                <span class="method-start">835363 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">838344 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">838702 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyListAndGridViewsInSearchResultsPageHavingOneProduct</span>
+                <span class="method-start">843438 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">856817 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">857135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyListAndGridViewsWhenMultipleProductsAreDisplayed</span>
+                <span class="method-start">861771 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">863683 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">864014 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNavigationToProductComparisonPageFromSearchResultsPage</span>
+                <span class="method-start">868102 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">869813 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">870175 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAllSortingOptionsInSearchResultsPage</span>
+                <span class="method-start">874467 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">875939 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">876197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyShowProductsByLimitingCount</span>
+                <span class="method-start">880359 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">881939 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">882266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDisplayingOfSearchFieldAndSearchButtonOnAllPagesOfTheApplication</span>
+                <span class="method-start">886654 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">942455 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">942812 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNavigatingToSearchPageFromSiteMapPage</span>
+                <span class="method-start">947478 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">948806 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">949127 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBreadcrumbOptionInSearchResultsPage</span>
+                <span class="method-start">953197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">954905 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">955178 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUsingAllOptionsOnSearchResultsPageUsingKeyboardKeys</span>
+                <span class="method-start">959814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">969195 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">969444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchPageHeadingTitleURL</span>
+                <span class="method-start">973579 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">974318 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">974614 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchPageUI</span>
+                <span class="method-start">978692 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">979788 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">980022 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchFunctionalityInAllEnvironments</span>
+                <span class="method-start">984715 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">986067 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

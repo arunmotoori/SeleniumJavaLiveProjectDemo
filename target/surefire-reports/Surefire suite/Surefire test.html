@@ -1,0 +1,1117 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>69/13/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Apr 05 11:33:48 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>952 seconds (952485 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards()'><b>verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards</b><br>Test class: tests.RegisterTest<br>Parameters: {Passwords=ABCD456#}</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1561782291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1561782291'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>7</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyPasswordIsNotVisibleInPageSource()'><b>verifyPasswordIsNotVisibleInPageSource</b><br>Test class: tests.LoginTest</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at tests.LoginTest.verifyPasswordIsNotVisibleInPageSource(LoginTest.java:210)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1599041417", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1599041417'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at tests.LoginTest.verifyPasswordIsNotVisibleInPageSource(LoginTest.java:210)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>1</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyMandatoryFieldsInRegisterAccountPage()'><b>verifyMandatoryFieldsInRegisterAccountPage</b><br>Test class: tests.RegisterTest</td>
+<td><div><pre>java.lang.AssertionError: expected [&quot;* &quot;] but found [none]
+	at tests.RegisterTest.verifyMandatoryFieldsInRegisterAccountPage(RegisterTest.java:475)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace850359367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace850359367'><pre>java.lang.AssertionError: expected [&quot;* &quot;] but found [none]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at tests.RegisterTest.verifyMandatoryFieldsInRegisterAccountPage(RegisterTest.java:475)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards()'><b>verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards</b><br>Test class: tests.RegisterTest<br>Parameters: {Passwords=12345.0}</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2049688163", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2049688163'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>6</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountByEnteringOnlySpaces()'><b>verifyRegisteringAccountByEnteringOnlySpaces</b><br>Test class: tests.RegisterTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Telephone does not appear to be valid!] but found []
+	at tests.RegisterTest.verifyRegisteringAccountByEnteringOnlySpaces(RegisterTest.java:576)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1233147305", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1233147305'><pre>java.lang.AssertionError: expected [Telephone does not appear to be valid!] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at tests.RegisterTest.verifyRegisteringAccountByEnteringOnlySpaces(RegisterTest.java:576)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>6</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards()'><b>verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards</b><br>Test class: tests.RegisterTest<br>Parameters: {Passwords=abcd1234}</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace217971860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace217971860'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>5</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyHeightWidthNumberOfCharacters()'><b>verifyHeightWidthNumberOfCharacters</b><br>Test class: tests.RegisterTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyHeightWidthNumberOfCharacters(RegisterTest.java:781)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace566452877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace566452877'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at tests.RegisterTest.verifyHeightWidthNumberOfCharacters(RegisterTest.java:781)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>56</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.SearchTest.verifyShowProductsByLimitingCount()'><b>verifyShowProductsByLimitingCount</b><br>Test class: tests.SearchTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tests.SearchTest.verifyShowProductsByLimitingCount(SearchTest.java:236)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1854305896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1854305896'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at tests.SearchTest.verifyShowProductsByLimitingCount(SearchTest.java:236)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>1</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards()'><b>verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards</b><br>Test class: tests.RegisterTest<br>Parameters: {Passwords=abcdefghi}</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace719342934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace719342934'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>7</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisterAccountUsingLeadingAndTrailingSpaces()'><b>verifyRegisterAccountUsingLeadingAndTrailingSpaces</b><br>Test class: tests.RegisterTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Arun] but found [     Arun     ],
+	expected [Motoori] but found [     Motoori     ],
+	expected [1234567890] but found [     1234567890     ]
+	at tests.RegisterTest.verifyRegisterAccountUsingLeadingAndTrailingSpaces(RegisterTest.java:831)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1965747228", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1965747228'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Arun] but found [     Arun     ],
+	expected [Motoori] but found [     Motoori     ],
+	expected [1234567890] but found [     1234567890     ]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.RegisterTest.verifyRegisterAccountUsingLeadingAndTrailingSpaces(RegisterTest.java:831)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>6</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards()'><b>verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards</b><br>Test class: tests.RegisterTest<br>Parameters: {Passwords=abcd123$}</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1015263924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1015263924'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at tests.RegisterTest.verifyRegisteringAccountUsingPasswordsWhichAreNotFollowingPasswordComplexityStandards(RegisterTest.java:608)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>6</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoggingIntoApplicationUsingChangedPassword()'><b>verifyLoggingIntoApplicationUsingChangedPassword</b><br>Test class: tests.LoginTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Change your password&quot;}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc314a96fa3787751f8ceed6c625cef2, findElement {using=link text, value=Change your password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\arunm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55284/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc314a96fa3787751f8ceed6c625cef2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.isDisplayed(Unknown Source)
+	at utils.ElementUtilities.isElementDisplayedOnPage(ElementUtilities.java:126)
+	at utils.ElementUtilities.clickOnElement(ElementUtilities.java:85)
+	at pages.MyAccountPage.clickOnChangeYourPasswordOption(MyAccountPage.java:128)
+	at tests.LoginTest.verifyLoggingIntoApplicationUsingChangedPassword(LoginTest.java:219)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace196316233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace196316233'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Change your password&quot;}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc314a96fa3787751f8ceed6c625cef2, findElement {using=link text, value=Change your password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\arunm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55284/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc314a96fa3787751f8ceed6c625cef2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.isDisplayed(Unknown Source)
+	at utils.ElementUtilities.isElementDisplayedOnPage(ElementUtilities.java:126)
+	at utils.ElementUtilities.clickOnElement(ElementUtilities.java:85)
+	at pages.MyAccountPage.clickOnChangeYourPasswordOption(MyAccountPage.java:128)
+	at tests.LoginTest.verifyLoggingIntoApplicationUsingChangedPassword(LoginTest.java:219)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>4</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountUsingInvalidTelephoneNumber()'><b>verifyRegisteringAccountUsingInvalidTelephoneNumber</b><br>Test class: tests.RegisterTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tests.RegisterTest.verifyRegisteringAccountUsingInvalidTelephoneNumber(RegisterTest.java:373)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace461224193", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace461224193'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at tests.RegisterTest.verifyRegisteringAccountUsingInvalidTelephoneNumber(RegisterTest.java:373)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>7</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.SearchTest.verifySearchBySelectingTheCategory()'><b>verifySearchBySelectingTheCategory</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>2</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyForgottenPasswordOptionIsAvailable()'><b>verifyForgottenPasswordOptionIsAvailable</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisterAccountPageNavigations()'><b>verifyRegisterAccountPageNavigations</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>41</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.SearchTest.verifySearchWithANonExistingProduct()'><b>verifySearchWithANonExistingProduct</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>1</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyNumberOfUnsuccessfulLoginAttemps()'><b>verifyNumberOfUnsuccessfulLoginAttemps</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>10</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegistringAccountUsingAllFields()'><b>verifyRegistringAccountUsingAllFields</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>6</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoggingIntoApplicationWithoutProvidingAnyCredentials()'><b>verifyLoggingIntoApplicationWithoutProvidingAnyCredentials</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyBrowsingBackAfterLogin()'><b>verifyBrowsingBackAfterLogin</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>10</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.SearchTest.verifySearchWithoutEnterAnyProduct()'><b>verifySearchWithoutEnterAnyProduct</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoggingIntoApplicationUsingValidEmailAndInvalidPassword()'><b>verifyLoggingIntoApplicationUsingValidEmailAndInvalidPassword</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.SearchTest.verifyAllSortingOptionsInSearchResultsPage()'><b>verifyAllSortingOptionsInSearchResultsPage</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>1</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyWarningMessageOfMandatoryFieldsInRegisterAccountPage()'><b>verifyWarningMessageOfMandatoryFieldsInRegisterAccountPage</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>1</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyThankYourConfirmationEmailOnSuccessfulRegistration()'><b>verifyThankYourConfirmationEmailOnSuccessfulRegistration</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>9</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.SearchTest.verifyProductSearchAfterLogin()'><b>verifyProductSearchAfterLogin</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>3</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoggingIntoApplicationUsingKeyboardKeys()'><b>verifyLoggingIntoApplicationUsingKeyboardKeys</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>9</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoggingIntoApplicationUsingValidCredentails()'><b>verifyLoggingIntoApplicationUsingValidCredentails</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>9</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.SearchTest.verifySearchBySelectingToSearchInSubCategories()'><b>verifySearchBySelectingToSearchInSubCategories</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>2</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountWithoutSelectingPrivacyPolicyCheckboxField()'><b>verifyRegisteringAccountWithoutSelectingPrivacyPolicyCheckboxField</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>3</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisterAccountPrivacyPolicyField()'><b>verifyRegisterAccountPrivacyPolicyField</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.LogoutTest.verifyLoggingOutUsingRightColumnLogoutOption()'><b>verifyLoggingOutUsingRightColumnLogoutOption</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>7</td>
+<td>tests.LogoutTest@72057ecf</td></tr>
+<tr>
+<td title='tests.LogoutTest.verifyLoggingOutUsingMyAccountLogoutOption()'><b>verifyLoggingOutUsingMyAccountLogoutOption</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>7</td>
+<td>tests.LogoutTest@72057ecf</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyDifferrentWaysOfNavigatingToLoginPage()'><b>verifyDifferrentWaysOfNavigatingToLoginPage</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisterAccountWithExistingEmailAddress()'><b>verifyRegisterAccountWithExistingEmailAddress</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>4</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountWithoutEnteringConfirmationPassword()'><b>verifyRegisteringAccountWithoutEnteringConfirmationPassword</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>3</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisterAccountUI()'><b>verifyRegisterAccountUI</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisterAccountPageBreadcrumbURLTitleHeading()'><b>verifyRegisterAccountPageBreadcrumbURLTitleHeading</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.LogoutTest.verifyBreadcrumbTitleURLAndHeadingOfAccountLogoutPage()'><b>verifyBreadcrumbTitleURLAndHeadingOfAccountLogoutPage</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>6</td>
+<td>tests.LogoutTest@72057ecf</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyBrowsingBackAfterLogout()'><b>verifyBrowsingBackAfterLogout</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>11</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisterAccountPagePlaceholders()'><b>verifyRegisterAccountPagePlaceholders</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountByProvidingMismatchedPasswords()'><b>verifyRegisteringAccountByProvidingMismatchedPasswords</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>3</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountByNotSubscribingToNewsletter()'><b>verifyRegisteringAccountByNotSubscribingToNewsletter</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>5</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.SearchTest.verifyNavigationToProductComparisonPageFromSearchResultsPage()'><b>verifyNavigationToProductComparisonPageFromSearchResultsPage</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>1</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountUsingKeyboardKeys()'><b>verifyRegisteringAccountUsingKeyboardKeys</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>2</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountPasswordFieldsForSecurity()'><b>verifyRegisteringAccountPasswordFieldsForSecurity</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoggingIntoApplicationUsingInvalidCredentials()'><b>verifyLoggingIntoApplicationUsingInvalidCredentials</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.LogoutTest.verifyLoginImmediatleyAfterLogout()'><b>verifyLoginImmediatleyAfterLogout</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>13</td>
+<td>tests.LogoutTest@72057ecf</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountUsingMandatoryFields()'><b>verifyRegisteringAccountUsingMandatoryFields</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>5</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.SearchTest.verifySearchWithAnExistingProduct()'><b>verifySearchWithAnExistingProduct</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>1</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoginPageUI()'><b>verifyLoginPageUI</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisterAccountInAllEnvironments()'><b>verifyRegisterAccountInAllEnvironments</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>4</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.LogoutTest.verifyLoggingOutAndBrowsingBack()'><b>verifyLoggingOutAndBrowsingBack</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>7</td>
+<td>tests.LogoutTest@72057ecf</td></tr>
+<tr>
+<td title='tests.SearchTest.verifyNavigatingToSearchPageFromSiteMapPage()'><b>verifyNavigatingToSearchPageFromSiteMapPage</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>1</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.SearchTest.verifySearchFunctionalityUsingSearchCriteriaField()'><b>verifySearchFunctionalityUsingSearchCriteriaField</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>2</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyPlaceHoldersOfFieldsInLoginPage()'><b>verifyPlaceHoldersOfFieldsInLoginPage</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountUsingInvalidEmail()'><b>verifyRegisteringAccountUsingInvalidEmail</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>7</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyCopyingOfTextEnteredIntoPasswordField()'><b>verifyCopyingOfTextEnteredIntoPasswordField</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.LogoutTest.verifyNoLogoutOptionBeforeLoginInRightColumnOptions()'><b>verifyNoLogoutOptionBeforeLoginInRightColumnOptions</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>4</td>
+<td>tests.LogoutTest@72057ecf</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyRegisteringAccountBySubscribingToNewsletter()'><b>verifyRegisteringAccountBySubscribingToNewsletter</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>5</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.SearchTest.verifySearchPageHeadingTitleURL()'><b>verifySearchPageHeadingTitleURL</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoginPasswordFieldForVisibility()'><b>verifyLoginPasswordFieldForVisibility</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.SearchTest.verifySearchUsingTextInProductDescription()'><b>verifySearchUsingTextInProductDescription</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>2</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.SearchTest.verifyProductSeachResultingMultipleProducts()'><b>verifyProductSeachResultingMultipleProducts</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>1</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoggingIntoApplicationUsingInactiveCredentials()'><b>verifyLoggingIntoApplicationUsingInactiveCredentials</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.LogoutTest.verifyNoLogoutOptionBeforeLoginInMyAccountDropMenu()'><b>verifyNoLogoutOptionBeforeLoginInMyAccountDropMenu</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>3</td>
+<td>tests.LogoutTest@72057ecf</td></tr>
+<tr>
+<td title='tests.LogoutTest.verifyLogoutInAllSupportedEnvironments()'><b>verifyLogoutInAllSupportedEnvironments</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>7</td>
+<td>tests.LogoutTest@72057ecf</td></tr>
+<tr>
+<td title='tests.SearchTest.verifySearchFunctionalityFielsPlaceHolders()'><b>verifySearchFunctionalityFielsPlaceHolders</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.LogoutTest.verifyLogoutUI()'><b>verifyLogoutUI</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>7</td>
+<td>tests.LogoutTest@72057ecf</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoginInAllEnvironments()'><b>verifyLoginInAllEnvironments</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>8</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.SearchTest.verifyListAndGridViewsInSearchResultsPageHavingOneProduct()'><b>verifyListAndGridViewsInSearchResultsPageHavingOneProduct</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>12</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.SearchTest.verifyListAndGridViewsWhenMultipleProductsAreDisplayed()'><b>verifyListAndGridViewsWhenMultipleProductsAreDisplayed</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>1</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.SearchTest.verifyBreadcrumbOptionInSearchResultsPage()'><b>verifyBreadcrumbOptionInSearchResultsPage</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>1</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.RegisterTest.verifyDifferentWaysOfNavigatingToRegisterAccountPage()'><b>verifyDifferentWaysOfNavigatingToRegisterAccountPage</b><br>Test class: tests.RegisterTest</td>
+<td></td>
+<td>3</td>
+<td>tests.RegisterTest@1afd44cb</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoggingIntoApplicationUsingInvalidEmailAndValidPassword()'><b>verifyLoggingIntoApplicationUsingInvalidEmailAndValidPassword</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoginPageBreadcrumbURLTitleHeading()'><b>verifyLoginPageBreadcrumbURLTitleHeading</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.SearchTest.verifySearchPageUI()'><b>verifySearchPageUI</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoginPageNavigations()'><b>verifyLoginPageNavigations</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>42</td>
+<td>tests.LoginTest@30ee2816</td></tr>
+<tr>
+<td title='tests.SearchTest.verifyUsingAllOptionsOnSearchResultsPageUsingKeyboardKeys()'><b>verifyUsingAllOptionsOnSearchResultsPageUsingKeyboardKeys</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>7</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.SearchTest.verifyDisplayingOfSearchFieldAndSearchButtonOnAllPagesOfTheApplication()'><b>verifyDisplayingOfSearchFieldAndSearchButtonOnAllPagesOfTheApplication</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>59</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+<tr>
+<td title='tests.SearchTest.verifySearchFunctionalityInAllEnvironments()'><b>verifySearchFunctionalityInAllEnvironments</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>1</td>
+<td>tests.SearchTest@6973b51b</td></tr>
+</table><p>
+</body>
+</html>
